@@ -42,20 +42,19 @@ if(message.content.startsWith("geek help")){
 const embedHelp = new Discord.RichEmbed()
 .setColor('#0099ff')
 .setTitle('Geek Help')
-.setAuthor('Geek', 'http://i65.tinypic.com/17pop3.png', 'https://twitter.com/bot_gorden')
+.setAuthor('Geek', 'http://i65.tinypic.com/17pop3.png', 'https://twitter.com/Josewowgame')
 .setThumbnail('http://i65.tinypic.com/17pop3.png')
-.addField('Visita a mi creador', 'https://twitter.com/bot_gorden')
+.addField('Visita a mi creador', 'https://twitter.com/Josewowgame')
 .addBlankField()
 .addField('Escribe (pls meme) o usa /meme', 'Geek te enviara un meme random', true)
-.addField('☐', '☐', true)
-.addField('Quieres subir tu meme a Geek?', 'Visita : www.geek.con/upload.php', true);
+.addField('☐', '☐', true);
 message.channel.send(embedHelp);
 
 
 }
   if(message.content.startsWith("pls meme")){
     if(calcular() == 0){
-      message.channel.send("No existen memes en mi sistema :(");
+      message.channel.send("No existen memes en mi sistema");
     }else{
       if(calcular() == 1){
         //envia 0 
@@ -152,13 +151,12 @@ if(fs.existsSync("memes/"+numero+".gif")){
             const embedHelp = new Discord.RichEmbed()
             .setColor('#0099ff')
             .setTitle('Geek Help')
-            .setAuthor('Geek', 'http://i65.tinypic.com/17pop3.png', 'https://twitter.com/bot_gorden')
+            .setAuthor('Geek', 'http://i65.tinypic.com/17pop3.png', 'https://twitter.com/Josewowgame')
             .setThumbnail('http://i65.tinypic.com/17pop3.png')
-            .addField('Visita a mi creador', 'https://twitter.com/bot_gorden')
+            .addField('Visita a mi creador', 'https://twitter.com/Josewowgame')
             .addBlankField()
             .addField('Escribe (pls meme) o usa /meme', 'Geek te enviara un meme random', true)
-            .addField('☐', '☐', true)
-            .addField('Quieres subir tu meme a Geek?', 'Visita : www.geek.con/upload.php', true);
+            .addField('☐', '☐', true);
         
             message.channel.send(embedHelp);
             
@@ -168,4 +166,4 @@ if(fs.existsSync("memes/"+numero+".gif")){
     
     
     });
-client.login('NTkyOTM0MzU4NjU1MDQxNTUx.XRGjPQ.rMUggN_WJwAPuW80909GShpNQr4');
+client.login('XXXXXXXXXXXXX');
